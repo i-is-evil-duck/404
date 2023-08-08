@@ -485,12 +485,39 @@ body {
 </head>
 
 <body>
+
 	<div class="nothing">
 		<div class="glitch" data-text="404">404</div>
 		<div class="glitch glitch-p" data-text="Page not found">
 			Page not found		</div>
 		<a class="btn btn-primary" href="/">Go Home --></a>
 	</div>
+ <script>
+    window.addEventListener('load', function() {
+      // Your script to remove the banner
+      let bannerNode = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
+      bannerNode.parentNode.removeChild(bannerNode);
+    });
+  </script>
+  <script>
+    window.addEventListener('load', function() {
+      // Your script to handle error codes and the referrer
+      var errorCode = window.location.pathname.split('/')[1];
+      var validErrorCodes = ['400', '401', '403', '404', '500', '502'];
+      if (validErrorCodes.includes(errorCode)) {
+        document.querySelector('.glitch').textContent = errorCode;
+        document.querySelector('.glitch-p').textContent = 'Error ' + errorCode;
+      }
+      if (document.referrer) {
+        var goBackButton = document.createElement('a');
+        goBackButton.className = 'btn btn-primary';
+        goBackButton.href = document.referrer;
+        goBackButton.textContent = 'Go Back <--';
+        document.querySelector('.nothing').appendChild(goBackButton);
+      }
+    });
+  </script>
+
 </body>
 
 </html>
