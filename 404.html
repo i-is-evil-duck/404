@@ -1,42 +1,36 @@
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>404 - Page Not Found</title>
-    <link rel="stylesheet" href="https://evilduckz.live/errors/style.css">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <div class="nothing">
+        <div class="glitch" data-text="Er̷̪͑ŕ̶͈or̴̢̓">404</div>
+        <div class="glitch glitch-p" data-text="p̷͂ag̸̖̈́e̷͚̽  404 fou̜nd̵͂">
+            Page not found
+        </div>
+          <a class="btn btn-primary" href="/">Go Home --&gt;</a>
+    </div>
+    <script>
+        window.addEventListener('load', function () {
+            // First script block content
 
-	<div class="nothing">
-		<div class="glitch" data-text="Er̷̪͑ŕ̶͈or̴̢̓">404</div>
-		<div class="glitch glitch-p" data-text="p̷͂ag̸̖̈́e̷͚̽  404 fou̜nd̵͂">
-			Page not found		</div>
-		<a class="btn btn-primary" href="/">Go Home --></a>
-	</div>
-  <script>
-    window.addEventListener('load', function() {
-      // Your script to remove the banner
-      let bannerNode = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
-      bannerNode.parentNode.removeChild(bannerNode);
-    });
-  </script>
-  <script>
-    window.addEventListener('load', function() {
+            // removes banner
+            let bannerNode = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
+            bannerNode.parentNode.removeChild(bannerNode);
 
-      if (document.referrer) {
-        var goBackButton = document.createElement('a');
-        goBackButton.className = 'btn btn-primary';
-        goBackButton.href = document.referrer;
-        goBackButton.textContent = 'Go Back <--';
-        document.querySelector('.nothing').appendChild(goBackButton);
-      }
-    });
-  </script>
-
+            // Second script block content
+            if (document.referrer) {
+                var goBackButton = document.createElement('a');
+                goBackButton.className = 'btn btn-primary';
+                goBackButton.href = document.referrer;
+                goBackButton.textContent = 'Go Back <--';
+                document.querySelector('.nothing').appendChild(goBackButton);
+            }
+        });
+    </script>
 </body>
-
 </html>
