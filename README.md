@@ -11,6 +11,7 @@
 ## ToDo
 + fix dynamic errors
 + add more things to do :?
++ find style.css idk i frgot to upload it and i lost the file lmfao its probly in glitch backup
 
 ## Views
 
