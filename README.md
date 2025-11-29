@@ -6,7 +6,7 @@
 ### 404 Page (Still Updating)
 
 ## Demo
-[Heres a demo on glitch](https://painted-second-quilt.glitch.me)
+[Heres a demo](404-flame-three.vercel.app)
 
 ## ToDo
 + fix dynamic errors
