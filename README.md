@@ -6,7 +6,7 @@
 ### 404 Page (Still Updating)
 
 ## Demo
-[Heres a demo](404-flame-three.vercel.app)
+[Heres a demo](404.evilduckz.net)
 
 ## ToDo
 + fix dynamic errors
