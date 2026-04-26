@@ -7,7 +7,7 @@
 
 ## Demo
 [Heres a web demo](404.evilduckz.net)
-[![Demo GIF](https://github.com/i-is-evil-duck/404/blob/main/imgs/404-demo.gif)](404.j3ly.com)
+[![Demo GIF](https://github.com/i-is-evil-duck/404/blob/main/imgs/404-demo.gif)](https://404.j3ly.com)
 
 
 ## ToDo
